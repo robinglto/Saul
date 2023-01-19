@@ -32,31 +32,33 @@ const PostLayout = ({ post }: any) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <article className="mx-6 sm:mx-auto max-w-2xl py-16">
-        <div className="mb-6">
-          <h1 className="mb-1 text-3xl font-bold text-white text-center">
-            {post.title}
-          </h1>
-          <time
-            dateTime={post.date}
-            className="text-sm text-slate-600 flex justify-center mb-20"
-          >
-            {format(parseISO(post.date), "LLLL d, yyyy")}
-          </time>
+      <div className=" ">
+        <article className="mx-6 sm:mx-auto max-w-2xl py-16">
+          <div className="mb-6">
+            <h1 className="mb-1 text-3xl font-bold text-white text-center">
+              {post.title}
+            </h1>
+            <time
+              dateTime={post.date}
+              className="text-sm text-slate-600 flex justify-center mb-20"
+            >
+              {format(parseISO(post.date), "LLLL d, yyyy")}
+            </time>
 
-          <div
-            className="prose prose-invert"
-            dangerouslySetInnerHTML={{ __html: post.body.html }}
-          />
+            <div
+              className="text-neutral-200 prose prose-md prose-neutral prose-invert"
+              dangerouslySetInnerHTML={{ __html: post.body.html }}
+            />
+          </div>
+        </article>
+        <div className="flex justify-center">
+          <Link
+            href="/snippets"
+            className="border-2 border-neutral-800 rounded-xl hover:rounded-md py-1 px-3 text-md  text-gray-200 bg-neutral-800 hover:border-neutral-700 hover:bg-neutral-800/70 transition duration-500 ease-in-out cursor-pointer mb-28"
+          >
+            Back
+          </Link>
         </div>
-      </article>
-      <div className="flex justify-center">
-        <Link
-          href="/snippets"
-          className="border-2 border-neutral-800 rounded-xl hover:rounded-md py-1 px-3 text-md  text-gray-200 bg-neutral-800 hover:border-neutral-700 hover:bg-neutral-800/70 transition duration-500 ease-in-out cursor-pointer mb-28"
-        >
-          Back
-        </Link>
       </div>
     </>
   );

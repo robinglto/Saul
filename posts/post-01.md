@@ -5,7 +5,7 @@ description: How to create a simple blog site in Next.js using contentlayer...
 category: technology
 ---
 
-## Install and Configure Contentlayer  
+<!-- ## Install and Configure Contentlayer   -->
 Install the necessary dependencies inside your Next.js project:
 
 ``` js

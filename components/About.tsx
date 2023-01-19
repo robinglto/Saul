@@ -7,7 +7,7 @@ export default function About() {
     <section id="/">
       <div className="flex justify-center mb-2">
         <Image
-          className="rounded-full shadow-sm shadow-gray-200 
+          className="rounded-full shadow-lg shadow-neutral-700 
              h-40 w-40 mt-8 p-0.5 bg-neutral-800"
           src={Profile}
           alt="Profile"
