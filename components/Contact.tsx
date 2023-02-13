@@ -25,9 +25,9 @@ export const Contactos = () => {
   };
 
   return (
-    <section className=" body-font relative">
+    <section className=" body-font relative ">
       <form ref={form} onSubmit={sendEmail}>
-        <div className="container px-5  mx-auto">
+        <div className="container px-5  mx-auto ">
           <div className="flex flex-col text-center w-full mb-10">
             <h1 className="sm:text-xl text-xl font-medium title-font text-gray-200">
               Get In Touch
@@ -94,7 +94,7 @@ export const Contactos = () => {
                   <button
                     type="submit"
                     value="Send"
-                    className="border-2 border-neutral-800 rounded-xl hover:rounded-md py-1 px-3 text-md  text-neutral-400/90 bg-neutral-800 hover:border-neutral-700 hover:bg-neutral-800/70 transition duration-500 ease-in-out cursor-pointer mt-2 mb-2"
+                    className="border-2 border-neutral-800 rounded-xl hover:rounded-md py-1 px-3 text-md  text-neutral-400/90 bg-neutral-800 hover:border-neutral-700 hover:bg-neutral-800/70 transition duration-500 ease-in-out cursor-pointer mt-2 -mb-1"
                   >
                     Send
                   </button>

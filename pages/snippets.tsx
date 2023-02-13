@@ -15,7 +15,7 @@ export async function getStaticProps() {
 
 function PostCard(post: any) {
   return (
-    <div className=" flex justify-center w-4/6 md:w-1/2 lg:w-1/3 mx-auto ">
+    <div className=" flex justify-center w-4/6 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 mx-auto ">
       <Link href={post.url}>
         <ol className="relative border-l-2 border-gray-200  dark:border-neutral-700">
           <li className="mb-10 ml-6">

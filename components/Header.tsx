@@ -17,6 +17,13 @@ export default function NavBar() {
           >
             <Link href={"/"}>Home</Link>
           </li>
+          {/* <li
+            className={`hover:text-white subpixel-antialiased text-lg cursor-pointer transition duration-500 ease-in-out ${
+              router.pathname === "/contact" ? "text-white" : "text-gray-500"
+            }`}
+          >
+            <Link href={"/blog"}>Blog</Link>
+          </li> */}
           <li
             className={`hover:text-white subpixel-antialiased text-lg cursor-pointer transition duration-500 ease-in-out ${
               router.pathname === "/snippets" ? "text-white" : "text-gray-500"
@@ -24,6 +31,7 @@ export default function NavBar() {
           >
             <Link href={"/snippets"}>Snippets</Link>
           </li>
+
           <li
             className={`hover:text-white subpixel-antialiased text-lg cursor-pointer transition duration-500 ease-in-out ${
               router.pathname === "/contact" ? "text-white" : "text-gray-500"

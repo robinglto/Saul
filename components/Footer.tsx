@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="flex justify-center my-20">
       <div className="space-y-4">
-        <p className="subpixel-antialiased text-gray-400/90 mx-10 text-center">
+        <p className="subpixel-antialiased text-gray-400/90 mx-10  text-center">
           Built with{" "}
           <Link
             className="hover:text-gray-200 hover:decoration-dashed hover:underline cursor-pointer transition duration-500 ease-in-out"
